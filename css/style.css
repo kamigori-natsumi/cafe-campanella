@@ -21,11 +21,16 @@ img {
     text-align: center;
     padding: 3rem;
 
-    @media(width < 500px) {
-        padding: 1rem;
-
+    @media(max-width:500px) {
+        padding: 2rem;
     }
+}
 
+#logo-container{
+    width: 200px;
+      @media(max-width:500px) {
+        width:100px;
+    }
 }
 
 .tytle {
@@ -36,9 +41,8 @@ img {
     margin: 0 auto;
     display: inline;
 
-    @media(width < 500px) {
+    @media(max-width:500px) {
         font-size: 1.5rem;
-
     }
 
 }
@@ -71,20 +75,17 @@ img {
 }
 
 body {
-
-
     background-color: var(--maincolor);
 
     & header {
         color: var(--accentcolor);
-
-    
 
         & nav {
             display: flex;
             align-items: end;
             justify-content: center;
             gap: 2rem;
+            padding: 1rem;
             
             .navCotaints {
                 display: flex;
@@ -93,7 +94,7 @@ body {
                 font-weight: bold;
                 font-size: 1.5rem;
 
-                @media(width < 900px) {
+                @media(max-width:900px) {
                     display: none;
 
                 }
@@ -129,7 +130,6 @@ body {
                 transform: translate(0, 0);
 
             }
-
         }
     }
 }
@@ -140,8 +140,6 @@ body {
     /*スライダーの幅と高さを調整*/
     width: 100%;
     max-width: 1240px;
-
-
 
     .swiper-wrapper {
         margin-bottom: 2rem;
@@ -156,7 +154,6 @@ body {
             & img {
                 object-fit: cover;
                 height: 300px;
-
             }
         }
     }
@@ -212,12 +209,12 @@ body {
         max-width: 100%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-        @media(width < 900px) {
+        @media(max-width:900px) {
             width: 150px;
             height: 150px;
         }
 
-        @media(width < 500px) {
+        @media(max-width:500px) {
             width: 100px;
             height: 100px;
         }
@@ -339,7 +336,7 @@ body {
         flex-wrap: wrap;
         border: 0.5px solid black;
 
-        @media(width < 900px) {
+        @media(max-width:900px) {
             flex-direction: column;
             align-items: center;
             max-width: 700px;
@@ -350,7 +347,7 @@ body {
             width: 20%;
             line-height: 1.8;
 
-            @media(width < 900px) {
+            @media(max-width:900px) {
                 width: 100%;
                 line-height: 1;
             }
@@ -361,7 +358,7 @@ body {
             text-align: left;
             line-height: 1.8;
 
-            @media(width < 900px) {
+            @media(max-width:900px) {
                 width: 100%;
                 text-align: center;
                 line-height: 1;
@@ -394,7 +391,7 @@ body {
     align-items: center;
     gap: 1rem;
 
-    @media(width < 900px) {
+    @media(max-width:900px) {
         display: flex;
         flex-direction: column;
     }
@@ -411,12 +408,11 @@ body {
         max-width: 900px;
         margin: 0 auto;
         border-radius: 10px;
-
-        @media(width < 900px) {
+        @media(max-width:900px) {
             margin: 0 1rem;
         }
 
-        @media(width < 500px) {
+        @media(max-width:500px) {
             margin: 0 1rem;
         }
 
@@ -424,7 +420,7 @@ body {
             display: flex;
             flex-wrap: wrap;
 
-            @media(width < 500px) {
+            @media(max-width:500px) {
                 flex-direction: column;
 
             }
@@ -439,7 +435,7 @@ body {
                 margin: 0 auto;
                 gap: 2rem;
 
-                @media(width < 500px) {
+                @media(max-width:500px) {
                     justify-content: center;
                     width: 80%;
                 }
@@ -455,7 +451,7 @@ body {
                     border-radius: 50%;
                     transition-duration: .4s;
 
-                    @media(width < 900px) {
+                    @media(max-width:900px) {
                         max-width: 100px;
                     }
 
@@ -499,7 +495,7 @@ body {
     border: 2px double var(--accentcolor);
     border-radius: 10px;
 
-    @media(width < 500px) {
+    @media(max-width:500px) {
         font-size
     }
 
@@ -546,6 +542,7 @@ dd {
             & img {
                 object-fit: cover;
                 width: 500px;
+                
             }
         }
     }
@@ -613,7 +610,7 @@ footer {
         transform: translate(-50%, -50%);
         display: flex;
 
-        @media(width < 900px) {
+        @media(max-width:900px) {
             display: none;
             ;
         }
@@ -646,7 +643,7 @@ footer {
 .accordionLogo img {
     width: 150px;
 
-    @media(width < 500px) {
+    @media(max-width:500px) {
         width: 70px;
     }
 }
@@ -657,11 +654,10 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    @media(width < 500px) {
-        font-size: 1.2rem;
+font-size: 1.2rem;
         line-height: 2;
         width: 200px;
-    }
+
 }
 
 .accordion-item {
