@@ -181,6 +181,19 @@ body {
     color: white;
 }
 
+.meltWrapper{
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    & div{
+        margin-bottom: 2rem;
+    & img{
+        max-width: 500px;
+        border-radius: 5px;
+    }
+    
+}}
+
 
 /* ーーーーーーーーー本日出勤の文鳥たちーーーーーーーーー */
 #attend {
